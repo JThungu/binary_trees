@@ -1,8 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * sorted_array_to_avl_revursive - recursive array to avl
- *
+ * sorted_array_to_avl_revursive - recursive array
  * @array: pointer to array
  * @first_index: sub array initial index
  * @final_index: sub array end index
@@ -34,11 +33,9 @@ avl_t *sorted_array_to_avl_revursive(int *array, int first_index,
 
 /**
  * sorted_array_to_avl - builds an AVL tree from an array
- *
- * @array: pointer to the first element of the array to be converted
- * @size: number of element in the array
+ * @array: pointer to the first element
+ * @size: number of element
  * Return: pointer to the root node of the created AVL tree
- * or NULL on failure
  */
 avl_t *sorted_array_to_avl(int *array, size_t size)
 {

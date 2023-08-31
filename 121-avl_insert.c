@@ -2,24 +2,10 @@
 
 /**
  * avl_insert_full - Inserts a value
- *
  * @tree: pointer to the root
  * @parent: parent of node
  * @value: the value
  * Return: pointer to the new_node node
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, create a new node and return it.
- * 2. If the value already exists in the tree, return NULL.
- *
- * 3. If the value is less than the current node,
- * recursively call the function on the left child.
- *
- * 4. If the value is greater than the current node,
- * recursively call the function on the right child.
- *
- * Time Complexity: O(log(n)
  */
 avl_t *avl_insert_full(avl_t *tree, avl_t *parent, int value)
 {
@@ -43,48 +29,11 @@ avl_t *avl_insert_full(avl_t *tree, avl_t *parent, int value)
 }
 
 /**
- * val_balancer - rebalance an AVL tree if needed
- *
+ * val_balancer - an AVL tree if needed
  * @root: pointer to the root of the tree
  * @tree: pointer to the node to be rebalanced
  * @value: inserted value
  * Return: 0
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, create a new node and return it.
- * 2. If the value is less than the current node,
- * recursively call the function on the left child.
- *
- * 3. If the value is greater than the current node,
- * recursively call the function on the right child.
- *
- * 4. If the value is equal to the current node,
- * return the current node.
- *
- * 5. If the value is not equal to the current node,
- * set the current node’s height.
- *
- * 6. If the current node’s balance is greater than 1 or less than -1,
- *  call the balance function.
- *
- * 7. If the balance is greater than 1,
- * and the value is less than the left child, rotate right.
- *
- * 8. If the balance is greater than 1,
- * and the value is greater than the left child,
- * rotate left on the left child, then rotate right.
- *
- * 9. If the balance is less than -1,
- * and the value is greater than the right child, rotate left.
- *
- * 10. If the balance is less than -1,
- * and the value is less than the right child,
- * rotate right on the right child, then rotate left.
- *
- * 11. Return the current node.
- *
- * Time Complexity: O(log(n)
  */
 void val_balancer(avl_t **root, avl_t *tree, int value)
 {
@@ -127,24 +76,9 @@ void val_balancer(avl_t **root, avl_t *tree, int value)
 
 /**
  * avl_insert - Insets the value in avl
- *
  * @tree: double pointer to root
  * @value: the value
  * Return: pointer to the new node
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, create a new node and return it.
- *
- * 2. If the tree is not empty,
- * call avl_insert_full() to insert the new node.
- *
- * 3. If the new node is inserted successfully,
- * call val_balancer() to balance the tree.
- *
- * 4. Return the new node.
- *
- * Time Complexity: O(log(n)
  */
 avl_t *avl_insert(avl_t **tree, int value)
 {

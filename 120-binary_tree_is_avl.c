@@ -2,22 +2,8 @@
 
 /**
  * btl - auxiliary level
- *
  * @tree: pointer to root
  * Return: integer with level
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, return 0.
- *
- * 2. If the tree is a leaf node, return 1.
- *
- * 3. If the tree is not a leaf node, recursively
- * calculate the height of the left and right subtrees.
- *
- * 4. Return the maximum of the two heights plus 1.
- *
- * Time Complexity: O(n)
  */
 int btl(const binary_tree_t *tree)
 {
@@ -37,18 +23,8 @@ int btl(const binary_tree_t *tree)
 
 /**
  * bt_balance - factor calculate
- *
  * @tree: pointer to root
  * Return: integer with factor
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, return 0.
- * 2. Otherwise, return the difference between the left and right subtrees.
- * 3. The btl function is a helper function that
- * returns the height of the tree.
- *
- * Time Complexity: O(n)
  */
 int bt_balance(const binary_tree_t *tree)
 {
@@ -60,26 +36,10 @@ int bt_balance(const binary_tree_t *tree)
 
 /**
  * bavl - Check level
- *
  * @tree: pointer to root
  * @min: min value
  * @max: max value
  * Return: 1 if is AVL, 0 otherwise
- *
- * FUNCTIONALITY *
- *
- * 1. If the tree is empty, it’s a valid AVL tree.
- *
- * 2. If the tree’s value is greater than the max or less than the min,
- * it’s not a valid AVL tree.
- *
- * 3. If the tree’s balance is greater than 1 or less than -1,
- * it’s not a valid AVL tree.
- *
- * 4. If the tree’s left subtree is a valid AVL tree and the tree’s
- * right subtree is a valid AVL tree, then the tree is a valid AVL tree.
- *
- * Time Complexity: O(n)
  */
 int bavl(const binary_tree_t *tree, int min, int max)
 {
@@ -100,33 +60,9 @@ int bavl(const binary_tree_t *tree, int min, int max)
 }
 
 /**
- * binary_tree_is_avl - checks if a binary tree is a valid AVL Tree
+ * binary_tree_is_avl - a binary tree is a valid AVL Tree
  * @tree: pointer to the root node of the tree to check
- *
  * Return: 1 if tree is a valid AVL Tree, and 0 otherwise
- *
- * FUNCTIONALITY
- *
- * 1. If the tree is empty, return 0.
- *
- * 2. Else, call the bavl function.
- *
- * 3. The bavl function takes the tree,
- * the minimum value and the maximum value as arguments.
- *
- * 4. If the tree is NULL, return 1.
- *
- * 5. Else, if the tree’s value is less than the
- * minimum value or greater than the maximum value, return 0.
- *
- * 6. Else, recursively call the bavl function for
- * the left and right subtrees.
- *
- * 7. If the left subtree is not an AVL tree, return 0.
- *
- * 8. Else, if the right subtree is not an AVL tree, return 0.
- *
- * 9. Else, return 1.
  */
 int binary_tree_is_avl(const binary_tree_t *tree)
 {

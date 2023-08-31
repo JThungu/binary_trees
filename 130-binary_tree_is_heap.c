@@ -1,11 +1,10 @@
 #include "binary_trees.h"
-
 /**
- * binary_tree_height - Function that measures the height of a binary tree
- * @tree: tree to go through
- * Return: the height
+ * binary_tree_height - measures the height of a binary tree
+ *
+ * @tree: tree
+ * Return: height
  */
-
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t l = 0;
@@ -29,8 +28,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_balance - Measures balance factor of a binary tree
- * @tree: tree to go through
+ * binary_tree_balance - balance factor of a binary tree
+ * @tree: tree h
  * Return: balanced factor
  */
 int binary_tree_balance(const binary_tree_t *tree)
@@ -47,9 +46,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 }
 
 /**
- * tree_is_perfect - function that says if a tree is perfect or not
- * it has to be the same quantity of levels in left as right, and also
- * each node has to have 2 nodes or none
+ * tree_is_perfect - perfect or not
+ *
  * @tree: tree to check
  * Return: 0 if is not a perfect or other number that is the level of height
  */
@@ -76,8 +74,8 @@ int tree_is_perfect(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_is_perfect - perfect or not a tree
- * @tree: tree to check
+ * binary_tree_is_perfect - tree
+ * @tree: tree
  * Return: 1 is it is or 0 if not
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
@@ -100,7 +98,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_is_heap - checks if a binary tree is a valid Max Binary Heap
+ * binary_tree_is_heap - valid Max Binary Heap
  * @tree: tree to check
  * Return: 1 is it is or 0 if not
  */
