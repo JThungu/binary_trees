@@ -1,7 +1,7 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_height_aux -  heigh
+ *
  * @tree: tree pointer
  * Return: the tree
  */
@@ -22,8 +22,8 @@ size_t binary_tree_height_aux(const binary_tree_t *tree)
 }
 
 /**
- * print_level_order - print
- * @tree: pointer
+ * print_level_order - print order
+ * @tree: tree
  * @level: level
  * @func: pointer to a  node
  * Return: void
