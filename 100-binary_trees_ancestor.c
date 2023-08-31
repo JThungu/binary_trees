@@ -6,7 +6,8 @@
  * @second: second pointer
  * Return: 0 or 1
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+const binary_tree_t *second)
 {
 	const binary_tree_t *f_anc, *s_anc;
 
