@@ -3,7 +3,7 @@
 /**
  *binary_tree_depth - Measures the depth of a node in a binary tree
  *@tree: Pointer to the node to measure
- *return - Return 0 if true
+ *Return - Return 0 if true
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
