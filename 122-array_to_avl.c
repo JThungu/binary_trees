@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * array_to_avl: builds from an array
+ * array_to_avl - builds from an array
  * @array: pointer to the first element o
  * @size: number of element in the array
  * Return: Pointer to root
